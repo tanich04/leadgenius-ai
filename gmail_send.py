@@ -4,7 +4,6 @@ import base64
 import os
 import pickle
 from email.mime.text import MIMEText
-from fastapi import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build

@@ -1,0 +1,9 @@
+streamlit
+pandas
+beautifulsoup4
+requests
+transformers
+torch
+google-auth
+google-auth-oauthlib
+google-api-python-client

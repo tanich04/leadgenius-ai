@@ -24,7 +24,7 @@ def gmail_authenticate():
             flow = InstalledAppFlow.from_client_config(
                 json.loads(st.secrets["GOOGLE_CREDENTIALS"]), SCOPES
             )
-            creds = flow.run_local_server(port=0)
+            creds = flow.run_console()
         with open('token.json', 'w') as token:
             token.write(creds.to_json())
     return build('gmail', 'v1', credentials=creds)
